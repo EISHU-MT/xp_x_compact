@@ -36,7 +36,7 @@ local mobs = {
 local xp_amounts = {
     -- Mobs Monsters
     ["mobs_monster:dirt_monster"] = 7,
-    ["mobs_monster:dungeon_master"] = 40,
+    ["mobs_monster:dungeon_master"] = 20,
     ["mobs_monster:oerkki"] = 12,
     ["mobs_monster:sand_monster"] = 7,
     ["mobs_monster:stone_monster"] = 5,
@@ -47,7 +47,7 @@ local xp_amounts = {
     ["mobs_monster:land_guard"] = 15,
     ["mobs_monster:fire_spirit"] = 10,
     -- Spawners mobs
-    ["spawners_mobs:balrog"] = 500,
+    ["spawners_mobs:balrog"] = 25,
     ["spawners_mobs:bunny_evil"] = 5,
     ["spawners_mobs:mummy"] = 14,
     ["spawners_mobs:uruk_hai"] = 14,
