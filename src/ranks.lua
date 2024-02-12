@@ -1,5 +1,5 @@
 xp.ranks = {
-    [1] = {name = "Newcomer", color = "#D3D3D3", range = {0, 1}},
+    [1] = {name = "Player", color = "#D3D3D3", range = {0, 1}},
     [2] = {name = "Player", color = "#D3D3D3", range = {1, 3}},
     [3] = {name = "Aspirant", color = "#87CEEB", range = {4, 6}},
     [4] = {name = "Freshman", color = "#98FB98", range = {7, 9}},
