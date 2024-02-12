@@ -116,7 +116,7 @@ function xp.lose_xp(player)
     local player_name = player:get_player_name()
 	local level = xp.level[player_name]
     local XP = xp.xp[player_name]
-    local lostXP = math.floor(XP * 0.1)
+    local lostXP = math.floor(XP * 0.2)
     xp.xp[player_name] = XP - lostXP
     mod_storage:set_int(player_name.."_xp", xp.xp[player_name])
 	xp.update_hud(player,level, xp.xp[player_name])
