@@ -360,7 +360,7 @@ function xp.get_rank_of_player(player)
     --    text = minetest.colorize(currentRank.color, currentRank.name) .. minetest.colorize("#FDFBFB", "\n[") .. minetest.colorize("#FFFFFF", name) .. minetest.colorize("#FDFBFB", "]")
     --})
     xp.update_hud(player, level, XP)
-    return currentRank
+    return currentRank, level
 end
 
 minetest.register_on_leaveplayer(function(player)
