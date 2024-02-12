@@ -1,3 +1,4 @@
+if not ejiosj then return end
 local shop_items = {}
 local current_page = 1
 local max_seller_name_length = 10
