@@ -333,6 +333,20 @@ minetest.register_on_joinplayer(function(player)
         text = minetest.colorize(currentRank.color, currentRank.name) .. minetest.colorize("#FDFBFB", "\n[") .. minetest.colorize("#FFFFFF", name) .. minetest.colorize("#FDFBFB", "]")
     })
     xp.update_hud(player, level, XP)
+			
+			hud_configurations[player:get_player_name()] = {
+				scale = 2.9,
+				size = {x = 145, y = 10},
+				offset = {x = 0, y = 30},
+				huds_position = {x = 0.885, y = -0.001},
+				huds2_position = {x = 0.958, y = -0.001},
+				hudbar_position = {x = 0.6845, y = -0.030},
+				hudbar_bg_position = {x = 0.6845, y = -0.019}
+			}
+			local player = minetest.get_player_by_name(name)
+			if player then
+				xp.update_hud(player, xp.level[player:get_player_name()], xp.xp[player:get_player_name()])
+			end
 end)
 
 function xp.get_rank_of_player(player)
